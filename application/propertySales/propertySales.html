@@ -1,0 +1,157 @@
+<div class="container-fluid">
+	<section class="search-property-section">
+		<form name="search-property-form">
+			<div class="left-content">
+				<div class="search-box">
+					<i class="glyphicon glyphicon-search"></i>
+					<input type="text" name="search-property" placeholder="Location or Building - e.g. Dubai Marina" class="search-property search-input">
+				</div>
+				<div class="select-box">
+					<select class="select-option" ng-model="selectedType" ng-options="type.type for type in types track by type.id">
+					</select>
+				</div>
+			</div>
+			<div class="right-content">
+				<div class="select-box">
+					<select class="select-option" ng-model="bedroomNum">
+						<option value="" disabled selected hidden>Bedrooms</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="select-box">
+					<select class="select-option" ng-model="budget">
+						<option value="" disabled selected hidden>Budget</option>
+						<option value="1">1,000,000 - 2,000,000 AED</option>
+						<option value="2">2,000,000 - 3,000,000 AED</option>
+						<option value="3">3,000,000 - 4,000,000 AED</option>
+						<option value="4">3,000,000 - 5,000,000 AED</option>
+					</select>
+				</div>
+				<div class="select-box">
+					<select class="select-option more-option" ng-model="more">
+						<option value="" disabled selected hidden>More</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+						<option value="4">Option 4</option>
+					</select>
+				</div>
+				<button class="btn save-search-btn">SAVE SEARCH</button>
+			</div>
+		</form>
+	</section>
+
+	<div class="clear"></div>
+
+	<div>
+		<div class="search-result-list">
+			<div class="bg"></div>
+			<div class="search-list">
+				<ul>
+					<li class="list-item">
+						<figure>
+							<a href="#">
+								<img src="assets/images/property-1.png">
+							</a>
+						</figure>
+						<div class="list-details">
+							<p class="caption-1">Villa Lantana 2 - Al Barsha</p>
+							<p class="caption-2">AED 2,700,000/- VH</p>
+							<p class="caption-3">Type 354 | 3 Bed Semi - Attached Villa</p>
+						</div>
+						<div class="more-details">
+							<div class="bd-num">3bd</div>
+							<div class="ba-num">2ba</div>
+							<span class="sqft">2,370 sqft</span>
+						</div>
+						<div class="grey-divider"></div>
+						<div class="contact-details">
+							<div class="call">Call</div>
+							<div class="email">@ Email</div>
+							<div class="right-arrow"></div>
+						</div>
+					</li>
+					<li class="list-item">
+						<figure>
+							<a href="#">
+								<img src="assets/images/property-1.png">
+							</a>
+						</figure>
+						<div class="list-details">
+							<p class="caption-1">Villa Lantana 2 - Al Barsha</p>
+							<p class="caption-2">AED 2,700,000/- VH</p>
+							<p class="caption-3">Type 354 | 3 Bed Semi - Attached Villa</p>
+						</div>
+						<div class="more-details">
+							<div class="bd-num">3bd</div>
+							<div class="ba-num">2ba</div>
+							<span class="sqft">2,370 sqft</span>
+						</div>
+						<div class="grey-divider"></div>
+						<div class="contact-details">
+							<div class="call">Call</div>
+							<div class="email">@ Email</div>
+							<div class="right-arrow"></div>
+						</div>
+					</li>
+					<li class="list-item">
+						<figure>
+							<a href="#">
+								<img src="assets/images/property-1.png">
+							</a>
+						</figure>
+						<div class="list-details">
+							<p class="caption-1">Villa Lantana 2 - Al Barsha</p>
+							<p class="caption-2">AED 2,700,000/- VH</p>
+							<p class="caption-3">Type 354 | 3 Bed Semi - Attached Villa</p>
+						</div>
+						<div class="more-details">
+							<div class="bd-num">3bd</div>
+							<div class="ba-num">2ba</div>
+							<span class="sqft">2,370 sqft</span>
+						</div>
+						<div class="grey-divider"></div>
+						<div class="contact-details">
+							<div class="call">Call</div>
+							<div class="email">@ Email</div>
+							<div class="right-arrow"></div>
+						</div>
+					</li>
+					<li class="list-item">
+						<figure>
+							<a href="#">
+								<img src="assets/images/property-1.png">
+							</a>
+						</figure>
+						<div class="list-details">
+							<p class="caption-1">Villa Lantana 2 - Al Barsha</p>
+							<p class="caption-2">AED 2,700,000/- VH</p>
+							<p class="caption-3">Type 354 | 3 Bed Semi - Attached Villa</p>
+						</div>
+						<div class="more-details">
+							<div class="bd-num">3bd</div>
+							<div class="ba-num">2ba</div>
+							<span class="sqft">2,370 sqft</span>
+						</div>
+						<div class="grey-divider"></div>
+						<div class="contact-details">
+							<div class="call">Call</div>
+							<div class="email">@ Email</div>
+							<div class="right-arrow"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="map-section" ng-controller="MapCtrl">
+		    <div id="map"></div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	
+</div>
