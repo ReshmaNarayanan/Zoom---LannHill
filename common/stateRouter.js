@@ -30,7 +30,8 @@ angular.module('lhAppRouter', ['ui.router'])
 				url: '/home',
 				views: {
 					'content@public': {
-						templateUrl: 'application/home/home.html'
+						templateUrl: 'application/home/home.html',
+						controller: 'homeController'
 					}
 				}
 			})

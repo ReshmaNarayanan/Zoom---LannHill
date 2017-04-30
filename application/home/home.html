@@ -42,10 +42,25 @@
 	</div>
 	<div class="mouse-icon"></div>
 
-	<!-- <div class="home-section-2">
+	<div class="home-section-2">
 		<div class="content">
 			<h2> WHY CHOOSE LANNHILL? </h2>
-			<h4>We believe expert advice and bespoke service enables us to build long lasting and trusting partnerships with our clients. We're passionate about delivering an exceptional customer experience for every client</h4>
+			<div class="divider"></div>
+			<h4> We believe expert advice and bespoke service enables us to build long lasting and trusting partnerships with our clients. We're passionate about delivering an exceptional customer experience for every client </h4>
+			<button class="btn">FIND OUT MORE</button>
 		</div>
-	</div> -->
+	</div>
+
+	<div class="featured-section">
+		<ul>
+			<li ng-repeat="item in featured">
+				<img ng-src={{item.image}} alt="Featured property">
+				<span class="banner">{{item.banner}}</span>
+				<div class="property-details">
+					<span>{{item.name}}</span>
+					<span>{{item.aed}}</span>
+				</div>
+			</li>
+		</ul>
+	</div>
 </div>
