@@ -24,7 +24,16 @@ angular.module('lhAppRouter', ['ui.router'])
 						controller: 'propertyController'
 					}
 				}
-			});
-		$urlRouterProvider.otherwise('/propertySales');
+			})
+			.state('home', {
+				parent: 'public',
+				url: '/home',
+				views: {
+					'content@public': {
+						templateUrl: 'application/home/home.html'
+					}
+				}
+			})
+		$urlRouterProvider.otherwise('/home');
 	}
 ])
