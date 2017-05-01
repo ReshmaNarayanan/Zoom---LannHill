@@ -1,5 +1,5 @@
-app.controller('propertyController', [ '$scope',
-	function ($scope) {
+app.controller('propertyController', [ '$scope', 'commonFactory',
+	function ($scope, commonFactory) {
 		$scope.types = [
 			{
 				type: 'All Types',
@@ -15,5 +15,11 @@ app.controller('propertyController', [ '$scope',
 			}
 		];
 		$scope.selectedType = $scope.types[0];
+		commonFactory.getData().then(function(response) {
+			$scope.searchList = response.searchList;
+		},
+		function(error) {
+			console.log(error);
+		});
 	}
 ]);
