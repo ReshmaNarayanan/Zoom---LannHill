@@ -1,0 +1,38 @@
+{
+	"searchList" : [{
+		"name" : "Villa Lantana 2 - Al Barsha",
+		"aed" : "AED 2,700,000/-",
+		"image" : "assets/images/property-1.png",
+		"banner": "Special Offers",
+		"caption": "Type 354 | 3 Bed Semi - Attached Villa",
+		"lat" : 25.0779515,
+        "long" : 55.2389574
+	},
+	{
+		"name" : "Villa Lantana - Al Barsha",
+		"aed" : "AED 30,000,000/-",
+		"image" : "assets/images/property-2.png",
+		"banner": "Hot Deals",
+		"caption": "Type 354 | 3 Bed Semi - Attached Villa",
+		"lat" : 25.0746196,
+        "long" : 55.1653189
+	},
+	{
+		"name" : "Villa Lantana Show Villa - Al Barsha",
+		"aed" : "AED 2,700,000/-",
+		"image" : "assets/images/property-3.png",
+		"banner": "Featured Properties",
+		"caption": "Type 354 | 3 Bed Semi - Attached Villa",
+		"lat" : 25.0764127,
+        "long" : 55.1614045
+	},
+	{
+		"name" : "Mira 3 - Al Barsha",
+		"aed" : "AED 2,700,000/-",
+		"image" : "assets/images/property-4.png",
+		"banner": "Featured Properties",
+		"caption": "Type 354 | 3 Bed Semi - Attached Villa",
+		"lat" : 25.007111,
+        "long" : 55.305462
+	}]
+}
