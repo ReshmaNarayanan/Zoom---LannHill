@@ -8,7 +8,7 @@ body {
   font-style: normal;
   font-weight: 100; }
 
-.font-regular, .home-content .home-section-2 .content h2, .home-content .home-section-2 .content h4, .home-content .featured-section ul li .property-details span {
+.font-regular, .home-content h2, .home-content h4, .home-content .featured-section ul li .property-details span {
   font-weight: 300; }
 
 .clear {
@@ -67,6 +67,11 @@ ul li {
   vertical-align: initial !important;
   margin-left: 7px; }
 
+.btn-transparent {
+  background: transparent;
+  border: 1px solid #fff !important;
+  border-radius: 0 !important; }
+
 .caption-1 {
   color: #a09167;
   font-size: 12px; }
@@ -104,8 +109,11 @@ ul li {
   position: absolute;
   background-color: #a09167;
   color: #fff;
-  margin-left: 7px;
-  bottom: -309px; }
+  top: 0px; }
+
+.bg-pattern, .home-content .meet-our-team-section {
+  background: url("../images/bg-pattern.png");
+  opacity: 0.1; }
 
 .header-section {
   margin: 0 0px;
@@ -160,11 +168,9 @@ ul li {
   width: 50%;
   display: inline-block;
   float: left; }
-  .search-result-list .bg {
-    background: url("../images/bg-pattern.png");
-    opacity: 0.1;
+  .search-result-list .bg-pattern, .search-result-list .home-content .meet-our-team-section, .home-content .search-result-list .meet-our-team-section {
     width: 50%;
-    height: 827px;
+    height: 873px;
     z-index: -100;
     position: absolute; }
   .search-result-list .search-list {
@@ -209,7 +215,7 @@ ul li {
   float: right; }
 
 #map {
-  height: 827px;
+  height: 873px;
   width: 100%;
   z-index: -100;
   position: inherit !important; }
@@ -290,6 +296,14 @@ footer {
 
 .home-content {
   color: #fff; }
+  .home-content h2, .home-content h4 {
+    text-align: center;
+    line-height: 1.2; }
+  .home-content .divider {
+    background: #a09167;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto; }
   .home-content .bg-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-1.png") center center no-repeat;
     width: 100%;
@@ -344,14 +358,6 @@ footer {
     .home-content .home-section-2 .content {
       margin: 0 auto;
       padding: 30px 296px 20px 296px; }
-      .home-content .home-section-2 .content h2, .home-content .home-section-2 .content h4 {
-        text-align: center;
-        line-height: 1.2; }
-      .home-content .home-section-2 .content .divider {
-        background: #a09167;
-        width: 100px;
-        height: 2px;
-        margin: 0 auto; }
       .home-content .home-section-2 .content .btn {
         background: inherit;
         color: inherit;
@@ -359,8 +365,29 @@ footer {
         border-radius: 0;
         display: block;
         margin: 0 auto; }
+    .home-content .home-section-2 .guide-content {
+      padding: 20px 44px; }
+      .home-content .home-section-2 .guide-content ul {
+        overflow: auto; }
+        .home-content .home-section-2 .guide-content ul li {
+          float: left;
+          padding: 20px 10px; }
+          .home-content .home-section-2 .guide-content ul li img {
+            width: 255px;
+            height: 185px;
+            float: left; }
+          .home-content .home-section-2 .guide-content ul li .guide-details {
+            width: 245px;
+            background: #fff;
+            float: left;
+            position: relative;
+            right: 100px;
+            margin-right: -100px;
+            padding: 20px; }
+            .home-content .home-section-2 .guide-content ul li .guide-details .right-arrow {
+              margin-top: 26px; }
   .home-content .featured-section {
-    overflow: auto;
+    position: relative;
     padding: 0 30px; }
     .home-content .featured-section ul {
       overflow: auto;
@@ -371,11 +398,33 @@ footer {
           width: 429px;
           height: 300px; }
         .home-content .featured-section ul li .property-details {
-          position: relative;
-          bottom: 60px; }
+          position: absolute;
+          bottom: 20px; }
           .home-content .featured-section ul li .property-details span {
             display: block;
             margin-left: 10px;
             font-weight: 500; }
+  .home-content .meet-our-team-section {
+    width: 100%;
+    height: 500px; }
+  .home-content .services-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/bg-2.png") center center no-repeat;
+    padding: 30px 220px 20px 220px;
+    width: 100%;
+    height: 385px; }
+    .home-content .services-section .content .divider {
+      background: #fff; }
+    .home-content .services-section ul {
+      overflow: auto;
+      margin-top: 20px; }
+      .home-content .services-section ul li {
+        float: left;
+        text-align: center;
+        padding: 10px 70px;
+        border: 1px solid #a09167; }
+        .home-content .services-section ul li p {
+          margin: 20px 0; }
+        .home-content .services-section ul li:nth-child(2) p {
+          margin: 10px 0 20px 0; }
 
 /*# sourceMappingURL=main.css.map */
