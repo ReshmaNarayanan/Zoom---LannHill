@@ -35,6 +35,15 @@ angular.module('lhAppRouter', ['ui.router'])
 					}
 				}
 			})
-		$urlRouterProvider.otherwise('/home');
+			.state('singleView', {
+				parent: 'public',
+				url: '/singleView',
+				views: {
+					'content@public': {
+						templateUrl: 'application/singleView/singleView.html'
+					}
+				}
+			});
+		$urlRouterProvider.otherwise('/singleView');
 	}
 ])

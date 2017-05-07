@@ -294,6 +294,12 @@ footer {
     footer .footer-content-right .address .location-icon {
       background: url("../images/small-location-icon.png") left center no-repeat; }
 
+.bg-1 {
+  width: 100%;
+  height: 750px;
+  z-index: -100;
+  position: absolute; }
+
 .home-content {
   color: #fff; }
   .home-content h2, .home-content h4 {
@@ -305,11 +311,7 @@ footer {
     height: 2px;
     margin: 0 auto; }
   .home-content .bg-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-1.png") center center no-repeat;
-    width: 100%;
-    height: 750px;
-    z-index: -100;
-    position: absolute; }
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-1.png") center center no-repeat; }
   .home-content .bg-1-content {
     padding: 130px 300px;
     text-align: center; }
@@ -426,5 +428,22 @@ footer {
           margin: 20px 0; }
         .home-content .services-section ul li:nth-child(2) p {
           margin: 10px 0 20px 0; }
+
+.single-view .bg-1 {
+  height: 600px;
+  background: url("../images/single-view-bg-1.png") center center no-repeat;
+  position: relative; }
+.single-view .nav-menu {
+  position: absolute;
+  bottom: 0;
+  background: #a09167;
+  width: 100%;
+  padding: 10px;
+  color: #fff; }
+  .single-view .nav-menu ul {
+    margin-left: 100px; }
+    .single-view .nav-menu ul li {
+      float: left;
+      padding: 0 10px; }
 
 /*# sourceMappingURL=main.css.map */
