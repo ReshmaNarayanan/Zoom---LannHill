@@ -63,11 +63,30 @@
 			</li>
 		</ul>
 	</div>
+	<div class="clear"></div>
 
 	<div class="meet-our-team-section">
+		<div class="bg-pattern"></div>
 		<div class="content">
 			<h2> MEET OUR TEAM </h2>
 			<div class="divider"></div>
+			<carousel active="active">
+		      	<slide ng-repeat="slide in groupedSlides" active="slide.active" index="slide.id">
+			      	<div ng-repeat="member in slide" class="team-profile">
+			      		<img ng-src="{{member.image}}" style="margin:auto;">
+				      	<div class="profile-details">
+				      		<h5>{{member.name}}</h5>
+				      		<h6>{{member.designation}}</h6>
+				      		<div class="email">
+								{{member.email}}
+							</div>
+							<div class="call">
+								{{member.phone}}
+							</div>
+				      	</div>
+			      	</div>
+		      	</slide>
+		    </carousel>
 		</div>
 	</div>
 
