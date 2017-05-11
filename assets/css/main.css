@@ -443,7 +443,8 @@ footer {
         .home-content .meet-our-team-section .carousel .carousel-inner > .item > .team-profile .profile-details {
           background: #fff;
           padding: 5px;
-          clear: both; }
+          clear: both;
+          text-align: left; }
           .home-content .meet-our-team-section .carousel .carousel-inner > .item > .team-profile .profile-details h4 {
             text-align: left;
             font-weight: 500; }
